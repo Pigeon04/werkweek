@@ -1,66 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Werkweek</title>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-    .row.content {height: 1500px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height: auto;} 
-    }
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
   </style>
 </head>
 <body>
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav">
-      <h4>Dit is een reisverslagje over mijn werkweek naar Schotland</h4>
-      <ul class="nav nav-pills nav-stacked">
-      </ul><br>
-      <div class="input-group">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WHO</a></li>
+        <li><a href="#">WHAT</a></li>
+        <li><a href="#">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <div class="col-sm-9">
-      <h4><small>...</small></h4>
-      <hr>
-      <h2>...</h2>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Werkweek</h3>
+  <img src="BenNevis.jpg" class="https://www.google.com/imgres?imgurl=https%3A%2F%2Fgeographical.co.uk%2Fwp-content%2Fuploads%2Fbennevis.jpg&tbnid=9db7SSpqfWpYnM&vet=12ahUKEwi-vPTG_pD_AhV5gv0HHQs1BDkQMygGegUIARDGAQ..i&imgrefurl=https%3A%2F%2Fgeographical.co.uk%2Fculture%2Fben-nevis-discovering-britain&docid=_Y8fvBFq9TcHbM&w=1200&h=800&q=Ben%20nevis&client=safari&ved=2ahUKEwi-vPTG_pD_AhV5gv0HHQs1BDkQMygGegUIARDGAQ" style="display:inline" alt="BenNevis" width="350" height="350">
 </div>
 
-<footer class="container-fluid">
-  <p>Footer Text</p>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Reisverslag</h3>
+  <p>Dit is een reisverslagje over mijn werkweek naar Schotland</p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">...</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>...</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMP0bjBXn5IX9u_Ee-AOqu3j5Wd5VOJtndkA&usqp=CAU" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>...</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTueWrO3wUWRy3eXoQlNQ8QRoxnf_dLHPN6sQ&usqp=CAU" class="img-responsive margin" style="width:100%" alt="Image">
+      
+    </div>
+    <div class="col-sm-4"> 
+      <p>...</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
 </footer>
 
 </body>
 </html>
-
